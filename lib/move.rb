@@ -7,3 +7,17 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+def update_array_at_with(array, index, value)
+  array[index] = value
+end
+
+def input_to_index(user_input)
+  new_user_input = user_input.to_i
+  new_user_input -= 1
+  return new_user_input
+end
+
+def move (board,step,value="X")
+  update_array_at_with(board,input_to_index(step),value)
+ 
+end
